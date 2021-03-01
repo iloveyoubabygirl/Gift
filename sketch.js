@@ -113,7 +113,7 @@ if(phil.isTouching(heartGroup)){
 }
 
 function Sword(){
-
+if(time.x>0){
   if(World.frameCount%300===0){
    var sword
    sword=createSprite(1080,300,10,10);
@@ -124,7 +124,7 @@ function Sword(){
    sword.velocityX=-15;
    
    swordGroup.add(sword);
- }
+ }}
   
   
   
